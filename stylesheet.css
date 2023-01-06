@@ -79,15 +79,15 @@ a {
 }
 
 .proyek-wrap img {
-    width: 300px;
-    position: relative;
+    width: 30%;
+    height: 300px;
+    object-fit: contain;
 }
 .proyek-wrap {
- 
     padding-left: 5%;
     padding-right: 5%;
     text-align: center;
-    height: 700px;
+    height: 800px;
 }
 
 .heading {
@@ -96,16 +96,54 @@ a {
 }
 
 .project {
-    float: left;
-    width: 33%;
+    display: none;
 }
 
 
 .project h3 {
     padding-top: 20px;
-    padding-bottom: 150px;
+    padding-bottom: 10px;
 }
 
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+.prev,
+.next {
+    margin-left: 200px;
+    margin-right: 200px;
+    left: 32%;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+}
 
 .contact {
     padding-top: 80px;
@@ -140,7 +178,7 @@ input, textarea {
 
 footer {
     background-color: gray;
-    height: 200px;
+    height: 300px;
 }
 
 .footer-title {
@@ -166,4 +204,78 @@ li {
 
 .list li {
     margin-bottom: 20px;
+}
+
+
+
+#myModal1 {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 120px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+#myModal2 {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 120px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+#myModal3 {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 120px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  #modalContent {
+    background-color: #fefefe;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+    width: 25%;
+  }
+
+  #closeModalIcon {
+    color: #aaaaaa;
+    float: right;
+  }
+
+  #closeModalIcon:hover,
+  #closeModalIcon:focus {
+    color: #000;
+    cursor: pointer;
+  }
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px #ccc solid;
+    text-align: left;
+    font-size: 15px;
+}
+
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    display: none;
+    padding: 0 18px;
+    background-color: white;
 }

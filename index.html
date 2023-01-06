@@ -26,12 +26,12 @@
         <img src="Ninja Ken.png" width="300" />
       </div>
       <div class="container">
-         <div class="main2">
+        <div class="main2">
           <h2>Tentang Saya</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-            iaculis magna orci. Nunc pellentesque lacus id facilisis rhoncus. Sed
-            pharetra sed nisi vitae tempor. Proin magna lectus, convallis et
+            iaculis magna orci. Nunc pellentesque lacus id facilisis rhoncus.
+            Sed pharetra sed nisi vitae tempor. Proin magna lectus, convallis et
             lobortis sit amet, iaculis vel ligula. Quisque varius viverra
             vehicula. Sed quam tellus, convallis nec tortor non, fermentum
             ullamcorper dui. Aliquam erat volutpat. Praesent odio lectus, varius
@@ -44,22 +44,72 @@
       </div>
     </div>
     <div class="proyek-wrap">
-      <div class="container">
+      <div class="slider-container">
         <div class="heading">
           <h1>Proyek Contoh</h1>
         </div>
         <div class="projects">
-          <div class="project">
-            <img src="1.png" />
+          <div class="project fade">
+            <img id="openModalButton1" src="1.png" />
             <h3>Image 1</h3>
           </div>
-          <div class="project">
-            <img src="2.png" />
+          <div class="project fade">
+            <img id="openModalButton2" src="1.png" />
             <h3>Image 2</h3>
           </div>
-          <div class="project">
+          <div class="project fade">
+            <img id="openModalButton3" src="2.png" />
+            <h3>Image 3</h3>
+          </div>
+          <div class="project fade">
+            <img src="2.png" />
+            <h3>Image 4</h3>
+          </div>
+          <div class="project fade">
             <img src="3.png" />
-            <h3>Image 2</h3>
+            <h3>Image 5</h3>
+          </div>
+          <div class="project fade">
+            <img src="3.png" />
+            <h3>Image 6</h3>
+          </div>
+          <a class="prev" onclick="updateSlide(-1)">&#10094;</a>
+          <a class="next" onclick="updateSlide(1)">&#10095;</a>
+        </div>
+        <div id="myModal1">
+          <div id="modalContent">
+            <span id="closeModalIcon1">&times;</span>
+            <h2>image 1</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+              minus ex totam? Repellendus quam reprehenderit beatae ab unde
+              atque ducimus modi adipisci deleniti error! Neque suscipit cumque
+              dolorum ad aliquam!
+            </p>
+          </div>
+        </div>
+        <div id="myModal2">
+          <div id="modalContent">
+            <span id="closeModalIcon2">&times;</span>
+            <h2>image 2</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+              minus ex totam? Repellendus quam reprehenderit beatae ab unde
+              atque ducimus modi adipisci deleniti error! Neque suscipit cumque
+              dolorum ad aliquam!
+            </p>
+          </div>
+        </div>
+        <div id="myModal3">
+          <div id="modalContent">
+            <span id="closeModalIcon3">&times;</span>
+            <h2>image 3</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+              minus ex totam? Repellendus quam reprehenderit beatae ab unde
+              atque ducimus modi adipisci deleniti error! Neque suscipit cumque
+              dolorum ad aliquam!
+            </p>
           </div>
         </div>
       </div>
@@ -79,6 +129,12 @@
     </div>
     <footer>
       <div class="container">
+        <button class="accordion">Section 1</button>
+        <div class="panel">
+          <p>Hubungi kami</p>
+          <p>Guru Domba</p>
+          <p>Ninja Ken</p>
+        </div>
         <h1 class="footer-title">NINJA KEN</h1>
         <div class="list">
           <ul>
@@ -89,5 +145,6 @@
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
